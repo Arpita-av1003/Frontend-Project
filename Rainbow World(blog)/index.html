@@ -3,66 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rainbow World</title>
-    <link rel="shortcut icon" href="https://thumbs.dreamstime.com/b/vector-art-colorful-handprint-rainbow-colors-symbolizing-diversity-inclusion-support-community-concept-symbolizes-406015691.jpg" type="image/x-icon">
-<link rel="stylesheet" href="style.css">
+    <title>Rainbow World | Explore Everything</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/mateus-campos-felipe-x0tB8fltGqU-unsplash.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <header>
+
+    <header class="main-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <div class="logo-icon">RW</div>
+                <h1>Rainbow World</h1>
+            </div>
+
             <nav>
-                <div class="logo">
-                    <img src="https://thumbs.dreamstime.com/b/vector-art-colorful-handprint-rainbow-colors-symbolizing-diversity-inclusion-support-community-concept-symbolizes-406015691.jpg" alt="logo" height="20px" width="30px">
-                </div>
-                <div class="title">
-                    <h1>Rainbow World</h1>
-                </div>
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">Nature</a></li>
+                    <li><a href="#">Food</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
             </nav>
-            <ul>
-                <li>
-                  <a href="#">Home</a>
-                </li>
-                <li>
-                  <a href="#">About</a>
-                </li>
-                <li>
-                  <a href="#">Articles</a>
-                </li>
-                <li>
-                  <a href="#">Contact Us</a>
-                </li>
-                <li>
-                    <p style="color: white; ">|</p>
 
-                </li>
-                <li>
+            <div class="nav-actions">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#" class="btn-subscribe">Subscribe</a>
+            </div>
+        </div>
+    </header>
 
-                    <a href="#">
-                        <img src="./assets/facebook.svg" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./assets/" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#"></a>
-                </li>
-                <li>
-                    <a href="#"></a>
-                </li>
-                <li>
-                    <p style="color: white;">|</p>
-                </li>
-                <li>
-                 <a href="#">
-                     <img src="./assets/Search Icon.png" alt="" srcset="">
-                 </a>
-                </li>
-            </ul>
-        </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Colors of Life</h2>
+            <p>Explore a variety of topics from technology to nature, art to cooking. Welcome to the spectrum.</p>
+            <a href="#latest" class="btn-primary">Start Reading</a>
+        </div>
+    </section>
 
-    </div>
+    <main class="container" id="latest">
+        <h3 class="section-title">Latest Articles</h3>
+        
+        <div class="blog-grid">
+            
+            <article class="card">
+                <div class="card-header">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Laptop code">
+                    <span class="tag tag-tech">Technology</span>
+                </div>
+                <div class="card-body">
+                    <h4>The Future of Web Design</h4>
+                    <p class="date">Oct 24, 2023</p>
+                    <p>How minimalism and gradients are taking over the digital landscape in modern development.</p>
+                    <a href="#" class="read-more">Read Article →</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-header">
+                    <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Nature">
+                    <span class="tag tag-nature">Nature</span>
+                </div>
+                <div class="card-body">
+                    <h4>Walking Through the Mist</h4>
+                    <p class="date">Oct 22, 2023</p>
+                    <p>Discovering the hidden trails of the Amazon rainforest and the vibrant wildlife within.</p>
+                    <a href="#" class="read-more">Read Article →</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-header">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Healthy Food">
+                    <span class="tag tag-food">Food</span>
+                </div>
+                <div class="card-body">
+                    <h4>The Art of Salad</h4>
+                    <p class="date">Oct 20, 2023</p>
+                    <p>It's not just leaves. Learn how to balance texture, flavor, and color in your daily meals.</p>
+                    <a href="#" class="read-more">Read Article →</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-header">
+                    <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Art painting">
+                    <span class="tag tag-art">Art</span>
+                </div>
+                <div class="card-body">
+                    <h4>Understanding Abstract</h4>
+                    <p class="date">Oct 18, 2023</p>
+                    <p>Why modern art looks the way it does and how to appreciate the chaos on the canvas.</p>
+                    <a href="#" class="read-more">Read Article →</a>
+                </div>
+            </article>
+
+             <article class="card">
+                <div class="card-header">
+                    <img src="https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Travel">
+                    <span class="tag tag-travel">Travel</span>
+                </div>
+                <div class="card-body">
+                    <h4>Solo Trips in Asia</h4>
+                    <p class="date">Oct 15, 2023</p>
+                    <p>A guide to safe and exciting solo travel through Vietnam, Thailand, and Japan.</p>
+                    <a href="#" class="read-more">Read Article →</a>
+                </div>
+            </article>
+
+             <article class="card">
+                <div class="card-header">
+                    <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Lifestyle">
+                    <span class="tag tag-life">Lifestyle</span>
+                </div>
+                <div class="card-body">
+                    <h4>Minimalism at Home</h4>
+                    <p class="date">Oct 10, 2023</p>
+                    <p>Declutter your space to declutter your mind. Simple steps to a cleaner home.</p>
+                    <a href="#" class="read-more">Read Article →</a>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <h3>Rainbow World</h3>
+                <p>Exploring the spectrum of life, one post at a time.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#">Tech</a></li>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Culture</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#">FB</a>
+                    <a href="#">IG</a>
+                    <a href="#">TW</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Rainbow World Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
