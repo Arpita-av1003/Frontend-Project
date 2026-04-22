@@ -1,23 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-/* --- CSS Reset & Variables --- */
+
 :root {
-    /* Color Palette */
     --primary: #6c5ce7;
     --secondary: #a29bfe;
     --dark: #2d3436;
     --light: #dfe6e9;
     --white: #ffffff;
     --bg-color: #f9f9fc;
-    
-    /* Category Colors */
     --tech-color: #0984e3;
     --nature-color: #00b894;
     --food-color: #e17055;
     --art-color: #e84393;
     --travel-color: #fdcb6e;
     --life-color: #636e72;
-
-    /* Spacing */
     --padding-container: 20px;
 }
 
@@ -51,7 +46,6 @@ ul {
     padding: 0 var(--padding-container);
 }
 
-/* --- Header & Nav --- */
 .main-header {
     background-color: var(--white);
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -129,7 +123,6 @@ ul {
     background-color: var(--dark);
 }
 
-/* --- Hero Section --- */
 .hero {
     height: 400px;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
@@ -173,7 +166,6 @@ ul {
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-/* --- Main Blog Grid --- */
 .section-title {
     margin-bottom: 30px;
     font-size: 1.8rem;
@@ -183,7 +175,6 @@ ul {
 
 .blog-grid {
     display: grid;
-    /* Responsive Grid Logic */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     margin-bottom: 60px;
